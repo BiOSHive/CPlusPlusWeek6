@@ -1,4 +1,4 @@
-# CPlusPlusWeek6
+# Divers Judge Calculator Project
 
 Readme Coming Soon
 <!-- Photo Heading
