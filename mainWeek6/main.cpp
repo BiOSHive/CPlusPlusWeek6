@@ -23,21 +23,21 @@ int main()
     acceptsData();
     cout << "********************************\n";
 
-    determineHighestScore();
-    cout << "********************************\n";
-
 
 }
 
 //MARK: functions
 //Accept the data – prompt the user for the judge’s score. average score
 void acceptsData() {
-    float judgeScore;
+    float judgeScore; //store score variable
 
     //dispaly 6 judges scores and only scoregrades 1-10 can be entered
-    for(int scores = 0; scores<= 9; scores++) {
-        cout<< "Enter Judges Score " << scores + 1 << " : " << endl;
-        cin >> judgeScore;
+    for(int scores = 1; scores <= 10; scores++) {
+        cout<< "Enter Judges Score " << scores << " : "; //get input from user
+        cin >> judgeScore;  //display score variable
+        if(scores <= 1 || scores >= 10){
+            cout << "Invalid Input \n";
+        }
     }
 }
 
