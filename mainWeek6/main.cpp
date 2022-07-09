@@ -35,7 +35,7 @@ void acceptsData() {
     for(int scores = 1; scores <= 10; scores++) {
         cout<< "Enter Judges Score " << scores << " : "; //get input from user
         cin >> judgeScore;  //display score variable
-        if(scores <= 1 || scores >= 10){
+        if(scores <= 1 || scores > 10){  //input validation
             cout << "Invalid Input \n";
         }
     }
