@@ -19,30 +19,53 @@ void determineLowestScore();
 //main function
 int main()
 {
-    cout << "***Points are given on a scale 1 -10, Enter divers scores below.***\n"<<endl;
+    cout << "**** Points are given on a scale 1 -10, Enter divers scores below. ****\n"<<endl;
     acceptsData();
-    return 0;
+    cout << "********************************\n";
+    
+    determineLowestScore();
+    cout << "********************************\n";
+    
+    determineHighestScore();
+    cout << "********************************\n";
+
 }
 
 //MARK: functions
 //Accept the data – prompt the user for the judge’s score. average score
 void acceptsData() {
-    cout <<"Enter Divers Scores: \n"<<endl;
-    int judgesScore = 0;
-    if (judgesScore < 1 || judgesScore > 10) //error checking to see if input is with 1-10
-        cout << "you entered an invalid number, try again.\n"<<endl;
-    else
-        cout << "score entered correctly "<<endl;
+    double score1,
+    score2,
+    score3,
+    score4,
+    score5,
+    score6;
+    
+    cout << "Enter Judges Score: "<<endl;
+    cin >> score1;
+    
+    cout << "Enter Judges Score: "<<endl;
+    cin >> score2;
+    
+    cout << "Enter Judges Score: "<<endl;
+    cin >> score3;
+    
+    cout << "Enter Judges Score: "<<endl;
+    cin >> score4;
+    
+    cout << "Enter Judges Score: "<<endl;
+    cin >> score5;
+    
+    cout << "Enter Judges Score: "<<endl;
+    cin >> score6;
 }
 
 //determine highest score of all scores
 void determineHighestScore () {
    //variables
-    int highestScore;
 }
 
 //determine lowest score of all scores
 void determineLowestScore() {
     //variables
-    int lowestScore;
 }
