@@ -12,9 +12,6 @@ using namespace std;
 
 //function protyping
 void acceptsData();
-void determineHighestScore ();
-void determineLowestScore();
-
 
 //main function
 int main()
@@ -29,28 +26,29 @@ int main()
 //MARK: functions
 //Accept the data – prompt the user for the judge’s score. average score
 void acceptsData() {
-    float judgeScore; //store score variable
+    //variables
+    double highestScore = 0.0, lowestScore = 0;
+    double averageScore = 0.0, judgeScore; //store score variable
 
     //dispaly 6 judges scores and only scoregrades 1-10 can be entered
-    for(int scores = 1; scores <= 10; scores++) {
+    for(int scores = 1; scores <= 6; scores++) {
         cout<< "Enter Judges Score " << scores << " : "; //get input from user
         cin >> judgeScore;  //display score variable
+        averageScore = scores / 6;  //calculating the average score
+        
         if(scores <= 1 || scores >= 10){  //input validation
             cout << "Invalid Input \n";
         }
+        if(scores > highestScore) //finding the highest score
+            highestScore = scores;
+        if (scores < lowestScore) //finding the lowest score
+            lowestScore = scores;
     }
-}
+    cout << "\n********************************\n";
+    cout << "the divers highest score is: \n"<< highestScore <<endl;
+    cout << "the divers lowest score is: \n"<< lowestScore <<endl;
+    cout << "the divers average score is: "<< averageScore <<endl;
 
-//determine highest score of all scores
-void determineHighestScore () {
-   //variables
-  
-}
-
-//determine lowest score of all scores
-void determineLowestScore() {
-    //variables
-    
 }
 
 
