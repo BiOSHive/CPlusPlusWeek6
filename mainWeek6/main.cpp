@@ -2,7 +2,7 @@
 //  main.cpp
 //  mainWeek6
 //     DIVE TEAM CALCULATOR
-//  The following code will allow the user to input data of the divers in the competition and calculator their high and low scores and their average score entered by 6 judges on a scale from 1-10.
+//  The following code will allow the user to input data of the divers in the competition and calculate their high and low scores.the scores will be judged and averaged by 6 judges on a scale from 1-10.
 //
 //  Created by Meisha Jones on 7/2/22.
 //
@@ -19,11 +19,10 @@ int main()
     cout << "**** Points are given on a scale 1 -10, Enter divers scores below. ****\n"<<endl;
     acceptsData();
     cout << "********************************\n";
-
-
 }
 
 //MARK: functions
+
 //Accept the data – prompt the user for the judge’s score. average score
 void acceptsData() {
     //variables
